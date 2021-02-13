@@ -366,6 +366,9 @@ stop {
 .choose__text:last-child {
   margin-bottom: 0;
 }
+.best {
+  margin-bottom: 150px;
+}
 .best__title {
   margin: 0;
   margin-bottom: 50px;
@@ -445,4 +448,52 @@ stop {
 .best__item:hover .best__link {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
   background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+}
+.reasons__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Alfa Slab One';
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 68px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.reasons__title span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
+  background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reasons__items-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.reasons__item {
+  position: relative;
+  width: 45%;
+  height: 150px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
+          box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.reasons__desc {
+  margin: 0;
+  padding: 32px 15px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #232555;
+}
+#reasons__svg {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
