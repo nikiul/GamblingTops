@@ -5,6 +5,12 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1290px;
@@ -15,7 +21,6 @@ body {
 }
 .section__upper {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
   background: url(../img/back.jpg) no-repeat center center fixed;
   background-size: cover;
   max-width: 100%;
