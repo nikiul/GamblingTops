@@ -366,3 +366,83 @@ stop {
 .choose__text:last-child {
   margin-bottom: 0;
 }
+.best__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Alfa Slab One';
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 68px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.best__title span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
+  background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.best__item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.best__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 23%;
+  background: #FFFFFF;
+  -webkit-box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
+          box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
+  border-radius: 15px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.best__item:hover {
+  -webkit-box-shadow: -4px -4px 15px #fdb959, 4px 4px 15px #ffa32f;
+          box-shadow: -4px -4px 15px #fdb959, 4px 4px 15px #ffa32f;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.best__text {
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #232555;
+}
+.best__text:last-child {
+  padding: 0;
+}
+.best__link {
+  position: relative;
+  margin: 0;
+  margin-top: auto;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: linear-gradient(91.72deg, #0dc78f 0%, #72ffd5 100%), #36ffc3;
+  border-radius: 0px 0px 15px 15px;
+}
+.best__item:hover .best__link {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
+  background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+}
