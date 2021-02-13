@@ -16,7 +16,8 @@ body {
 .section__upper {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-image: url(../img/back.jpg);
+  background: url(../img/back.jpg) no-repeat center center fixed;
+  background-size: cover;
   max-width: 100%;
   padding-top: 53px;
 }
@@ -185,6 +186,9 @@ stop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.rating__item:last-child {
+  margin-bottom: 0;
 }
 .rating__number {
   margin: 0;
@@ -595,6 +599,7 @@ stop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 .footer__lower-row {
   width: 45%;
@@ -609,4 +614,12 @@ stop {
 }
 .footer__img-wrap img:last-child {
   margin-right: 0;
+}
+.footer__copyright {
+  margin: 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-align: center;
 }
