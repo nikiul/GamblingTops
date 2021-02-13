@@ -18,7 +18,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-image: url(../img/back.jpg);
   max-width: 100%;
-  margin-bottom: 80px;
   padding-top: 53px;
 }
 .upper__header {
@@ -92,7 +91,6 @@ body {
   color: #fff;
 }
 .main__title span {
-  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
   background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
   -webkit-background-clip: text;
@@ -166,7 +164,7 @@ stop {
   stop-color: #FFB331;
 }
 .upper__rating {
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 .rating__item {
   background: linear-gradient(101.37deg, #232567 1.19%, rgba(24, 25, 45, 0) 100%), rgba(20, 20, 20, 0.9);
@@ -298,4 +296,73 @@ stop {
   background: linear-gradient(180deg, #00c087 0%, #30ffcd 100%);
   -webkit-box-shadow: 0px 0px 15px #00C087;
           box-shadow: 0px 0px 15px #00C087;
+}
+.section__middle {
+  padding-top: 66px;
+  padding-bottom: 160px;
+  background: linear-gradient(101.37deg, #232567 1.19%, rgba(24, 25, 45, 0) 100%), #141414;
+}
+.choose {
+  margin-bottom: 194px;
+}
+.choose__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Alfa Slab One';
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.choose__title span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
+  background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.choose__item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.choose__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin-bottom: 50px;
+}
+.choose__item:hover stop:first-child {
+  stop-color: #FF5F1B;
+}
+.choose__item:hover stop:last-child {
+  stop-color: #FFB331;
+}
+.choose__text-wrap {
+  margin-left: 20px;
+}
+.choose__item:hover .choose__text-wrap {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5f1b), to(rgba(255, 189, 60, 0))), #ffb331;
+  background: linear-gradient(180deg, #ff5f1b 0%, rgba(255, 189, 60, 0) 100%), #ffb331;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.choose__text {
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 1em;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.choose__text:last-child {
+  margin-bottom: 0;
 }

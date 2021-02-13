@@ -1,0 +1,69 @@
+.choose {
+    margin-bottom: 194px;
+}
+
+.choose__title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Alfa Slab One';
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+
+    span {
+        background: linear-gradient(180deg, #FF5F1B 0%, rgba(255, 189, 60, 0) 100%), #FFB331;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.choose__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.choose__item {
+    display: flex;
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+// .svg__wrap {
+//     display: flex;
+// }
+
+.choose__item:hover stop:first-child {
+    stop-color: #FF5F1B;
+}
+
+.choose__item:hover stop:last-child {
+    stop-color: #FFB331;
+}
+
+.choose__text-wrap {
+    margin-left: 20px;
+}
+
+.choose__item:hover .choose__text-wrap {
+    transition: .5s ease-in-out;
+
+    background: linear-gradient(180deg, #FF5F1B 0%, rgba(255, 189, 60, 0) 100%), #FFB331;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose__text {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 1em;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
