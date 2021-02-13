@@ -476,24 +476,52 @@ stop {
       flex-wrap: wrap;
 }
 .reasons__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  margin-bottom: 30px;
   width: 45%;
   height: 150px;
   background: #FFFFFF;
   -webkit-box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
           box-shadow: -4px -4px 15px rgba(54, 255, 195, 0.5), 4px 4px 15px rgba(54, 255, 195, 0.5);
   border-radius: 15px;
-  overflow: hidden;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.reasons__item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: -4px -4px 15px #ffc17d, 4px 4px 15px #fdb660;
+          box-shadow: -4px -4px 15px #ffc17d, 4px 4px 15px #fdb660;
 }
 .reasons__desc {
   margin: 0;
-  padding: 32px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 15px;
   line-height: 18px;
   color: #232555;
+  z-index: 2;
+}
+.reasons__item:hover p {
+  font-weight: 500;
 }
 #reasons__svg {
   position: absolute;
   top: 0;
   right: 0;
+}
+.reasons__item:hover g {
+  opacity: 0.6;
+}
+.reasons__item:hover stop:first-child {
+  stop-color: #FF5F1B;
+}
+.reasons__item:hover stop:last-child {
+  stop-color: #FFB331;
 }
