@@ -17,6 +17,20 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    br {
+        display: none;
+
+        @media (max-width: 420px) {
+            display: block;
+        }
+    }
+
+    @media (max-width: 420px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
 }
 
 .choose__item-wrap {
