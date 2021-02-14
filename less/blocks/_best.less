@@ -1,5 +1,9 @@
 .best {
     margin-bottom: 150px;
+
+    @media (max-width: 420px) {
+        margin-bottom: 0;
+    }
 }
 
 .best__title {
@@ -17,11 +21,30 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    br {
+        display: none;
+
+        @media (max-width: 420px) {
+            display: block;
+        }
+    }
+
+    @media (max-width: 420px) {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 27px;
+    }
 }
 
 .best__item-wrap {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 420px) {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .best__item {
@@ -38,10 +61,31 @@
         box-shadow: -4px -4px 15px #FDB959, 4px 4px 15px #FFA32F;
         transform: translateY(-10px);
     }
+
+    @media (max-width: 420px) {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        transform: none;
+
+        &:hover {
+            box-shadow: -4px -4px 7px rgba(253, 185, 89, 0.5), 4px 4px 7px rgba(255, 163, 47, 0.5);
+            transform: none;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .best__img {
 
+    @media (max-width: 420px) {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .best__text {
@@ -56,6 +100,15 @@
 
     &:last-child {
         padding: 0;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 7px;
+        line-height: 9px;
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
     }
 }
 
@@ -74,6 +127,14 @@
     color: #FFFFFF;
     background: linear-gradient(91.72deg, #0DC78F 0%, #72FFD5 100%), #36FFC3;
     border-radius: 0px 0px 15px 15px;
+
+    @media (max-width: 420px) {
+        border-radius: 0px 0px 10px 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 15px;
+        line-height: 18px;
+    }
 }
 
 .best__item:hover .best__link {
